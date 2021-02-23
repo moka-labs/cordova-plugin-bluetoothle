@@ -2975,7 +2975,7 @@ NSString *const operationWrite = @"write";
     id key = [keys objectAtIndex: i];
 
     if ([key isKindOfClass:[NSString class]]) {
-      if ([key isEqualToString:operationDiscover] || [key isEqualToString:operationRssi]) {
+      if ([key isEqualToString:operationConnect] || [key isEqualToString:operationRssi]) {
         id callback = [connection objectForKey:key];
         if (!callback) {
           continue;

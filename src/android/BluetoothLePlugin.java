@@ -3289,7 +3289,7 @@ public class BluetoothLePlugin extends CordovaPlugin {
     for (Object key : connection.keySet()) {
 
       if (key instanceof String) {
-        if (key.equals(operationDiscover) || key.equals(operationRssi) || key.equals(operationMtu)) {
+        if (key.equals(operationConnect) || key.equals(operationRssi) || key.equals(operationMtu)) {
           CallbackContext callback = (CallbackContext) connection.get(key);
           if (callback == null) {
             continue;
